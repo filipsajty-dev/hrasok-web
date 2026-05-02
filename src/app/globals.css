@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ── Colors ──────────────────────────────────────────────────────────── */
+  /* Exposed as bg-*, text-*, border-* Tailwind utilities */
+  --color-primary: #3fa31f;
+  --color-primary-hover: #348a19;
+  --color-cream: #fbf8f1; /* bg-cream  — main page background */
+  --color-surface: #ffffff; /* bg-surface — cards, modals */
+  --color-text: #1f2d1a; /* text-text  — body text */
+  --color-muted: #5a6b55; /* text-muted */
+  --color-coral: #f4a88b; /* bg-coral   — secondary CTAs */
+  --color-yellow: #f5d547; /* bg-yellow  — use sparingly */
+  --color-border: #e8e3d6; /* border-border */
+}
+
+@theme inline {
+  /* ── Fonts ───────────────────────────────────────────────────────────── */
+  /* Resolved at runtime from CSS vars set by next/font */
+  --font-heading: var(--font-fraunces);
+  --font-body: var(--font-inter);
+}
+
+/* ── CLAUDE.md canonical CSS variable names ────────────────────────────── */
+/* Use these for inline styles or non-Tailwind CSS */
+:root {
+  --color-bg: #fbf8f1;
+  --color-text-muted: #5a6b55;
+  --color-accent-coral: #f4a88b;
+  --color-accent-yellow: #f5d547;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
